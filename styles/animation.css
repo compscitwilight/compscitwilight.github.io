@@ -1,0 +1,39 @@
+@keyframes mainexpand {
+    0% {
+        display: none;
+        height: 0%;
+        width: 0%;
+    }
+
+    20% {
+        display: block;
+        height: 10%;
+        width: 10%;
+    }
+
+    30% {
+        height: 20%;
+        width: 20%;
+    }
+
+    40% {
+        height: 30%;
+        width: 20%;
+    }
+    /*
+    40% {
+        height: 40%;
+        width: 40%;
+    }
+    */
+    45% {
+        height: 50%;
+        width: 40%;
+    }
+}
+
+#main {
+    animation-name: mainexpand;
+    animation-duration: 1s;
+    animation-direction: alternate;
+}

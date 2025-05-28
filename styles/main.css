@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(15, 8, 30);
+    color: rgb(174, 255, 206);
+    font-family: "Courier New",
+        Courier,
+        "Lucida Sans Typewriter",
+        "Lucida Typewriter",
+        monospace;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+::-webkit-scrollbar-track {
+    background: #00032a52;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#header {
+    display: flex;
+    margin: auto;
+    margin-top: 10%;
+    width: fit-content;
+}
+
+#title-1, #title-2 {
+    cursor: pointer;
+}
+
+#title-1 {
+    color: lightgreen;
+}
+
+#title-2 {
+    color: rgb(171, 30, 171);
+}
+
+#main {
+    margin: auto;
+    background-color: rgba(11, 0, 22, 0.481);
+    border-radius: 8px;
+    width: 50%;
+    height: 50%;
+    overflow-y: scroll;
+    max-height: 420px;
+    padding: 24px;
+    box-shadow: 2px inset rgb(52, 35, 52);
+}
+
+#main-content {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    #footer {
+        display: none;
+    }
+}
+
+#main-navbar {
+    display: flex;
+    background-color: rgba(4, 4, 33, 0.198);
+    overflow: hidden;
+    text-align: center;
+}
+
+#links {
+    display: flex;
+    margin: auto;
+    width: fit-content;
+    padding: 3px;
+}
+
+#links > a {
+    color: white;
+}
+
+#links>a>img {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    margin: 24px;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.navbar-item {
+    margin: 12px;
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(145, 211, 171);
+}
+
+.navbar-item:hover,
+.navbar-item:active {
+    color: rgb(217, 174, 255);
+}
+
+#cursor-blink {
+    position: fixed;
+    width: 20px;
+    height: 10px;
+    background-color: #8157a2;
+}
+
+#cursor-blink-disabled {
+    display: none !important;
+}
